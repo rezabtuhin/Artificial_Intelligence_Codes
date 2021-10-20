@@ -1,0 +1,2 @@
+Full Algorithm: 17.5
+Cluster Image Plotting: 5

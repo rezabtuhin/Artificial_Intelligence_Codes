@@ -1,0 +1,10 @@
+(1) Dataset loading, train-val-test split: 2.5
+(2) Training code: 10
+(3) Validation/ test code: 5
+(4) l.r. and val_acc table: 2.5
+(5) train_loss vs epoch graph plot for the best l.r.: 2.5 
+(Task (2)-(5) have to be done without using sklearn like libraries)
+
+
+https://colab.research.google.com/drive/1rB0XgK9_seBzWhSUJXbbFc5F2trYwrFj
+This is a sklearn implementation of multi class logistic regression on a digit dataset.

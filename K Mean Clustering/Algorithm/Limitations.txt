@@ -1,0 +1,2 @@
+A lot of things depend on centroid initialization
+Need to know K in advance 

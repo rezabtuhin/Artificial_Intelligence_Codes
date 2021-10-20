@@ -1,0 +1,31 @@
+keep a dictionary which maps {0:'S', 1:'A', ...}
+
+Keep a list of lists, where 0th list will keep adjacent nodes of node 0, 1st list adjacent nodes of node 1 and so on. You can cleverly keep the costs (edge weights) here. 
+
+Keep another list for keeping the h values of each node. 0th index keeps the h value of 0th node.
+
+Make a node class which contains a node no., the immediate previous node object, actual travel cost so far and total_cost (this is the h(n) + g(n) value). [Remember, there can be different node class objects with same node no.] 
+
+Initialize a min priority queue minQ with a node object containing node S. Here, node = 0, prev_node = NULL, actual_cost_so_far = 0, total_cost = 0 + 7(h value of S)
+
+while minQ not empty:
+
+	extract the node object (suppose, NOb) from minQ having min total_cost (Suppose the node no. of this object is N)
+	
+	if N is the destination, then you are done. Just print the whole path by backtracking and break 
+	
+	for each node adjacent to node N:
+	
+		create a new node object NObNew.
+
+		Suppose, the adjacent node of node no. N is node no. M
+		
+		NOb info (suppose):
+			actual_cost_so_far = 5, 
+			total_cost = 9
+			node no. = N
+			Prev node object = POb
+		
+		Now, NObNew will contain: Node no. = M, prev_node = NOb, actual_cost_so_far = 5 + edge cost(N->M), total_cost = actual_cost_so_far + h(M)
+		
+		Push NObNew to minQ
